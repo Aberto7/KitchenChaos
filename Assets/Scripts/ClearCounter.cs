@@ -3,53 +3,23 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using UnityEngine;
 
-public class ClearCounter : BaseCounter, IKitchenObjectParent {
+public class ClearCounter : BaseCounter {
 
     [SerializeField] private KitchenObjectSO kitchenObjectSO;
-    [SerializeField] private Transform counterTopPoint;
-
-
-
-
-    private KitchenObject kitchenObject;
 
 
 
 
     public override void Interact(Player player){
-        if (kitchenObject == null){
-            Transform kitchenObjectTransform = Instantiate(kitchenObjectSO.prefab, counterTopPoint);
-            kitchenObjectTransform.GetComponent<KitchenObject>().SetKitchenObjectParent(this);
+        if(!HasKitchenObject()){
+            // There is no KitchenObject Here
+            if(player.HasKitchenObject()){
+                player.GetKitchenObject().SetKitchenObjectParent(this);
+            }
         } else {
-            // Give the Object to the player
-            kitchenObject.SetKitchenObjectParent(player);
+            // Yes, there is a KitchenObject Here
         }
     }
 
-
-
-
-
-
-    
-    public Transform GetKitchenObjectFollowTransform(){
-        return counterTopPoint;
-    }
-
-    public void SetKitchenObject(KitchenObject kitchenObject){
-        this.kitchenObject = kitchenObject;
-    }
-
-    public KitchenObject GetKitchenObject(){
-        return kitchenObject;
-    }
-
-    public void ClearKitchenObject(){
-        kitchenObject = null;
-    }
-
-    public bool HasKitchenObject(){
-        return kitchenObject != null;
-    }
 
 }

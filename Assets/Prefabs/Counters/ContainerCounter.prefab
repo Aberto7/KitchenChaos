@@ -66,7 +66,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4589716710238282922, guid: 9a9137fa2b035d34e881701d2c178192,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9046276256801292160}
   m_SourcePrefab: {fileID: 100100000, guid: 9a9137fa2b035d34e881701d2c178192, type: 3}
 --- !u!4 &3588381863753685110 stripped
 Transform:
@@ -74,6 +78,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1044146049768455389}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &3588381863753685111 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4589716710238282922, guid: 9a9137fa2b035d34e881701d2c178192,
+    type: 3}
+  m_PrefabInstance: {fileID: 1044146049768455389}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9046276256801292160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3588381863753685111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a24e4bf8722e4a04cbee6d08382923b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  containerCounter: {fileID: 4241571844333904543}
 --- !u!1001 &2477027078704519800
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -172,8 +195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a73dc91ec880ef42a9e1bbe8e1e8d90, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  kitchenObjectSO: {fileID: 11400000, guid: 47a403e2ce6056344b342406066340ad, type: 2}
   counterTopPoint: {fileID: 1154749782898930176}
+  kitchenObjectSO: {fileID: 11400000, guid: 47a403e2ce6056344b342406066340ad, type: 2}
 --- !u!4 &1154749782898930176 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3631684493360932984, guid: 4ca9371b38fe09c4cb4a5e82a600f5a0,
@@ -291,7 +314,8 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 1a0afd856a35421469b28b916116fd9c, type: 2}
     m_RemovedComponents:
     - {fileID: 6289625630049244101, guid: 9a9137fa2b035d34e881701d2c178192, type: 3}
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 5261771210811040880, guid: 9a9137fa2b035d34e881701d2c178192, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4589716710238282922, guid: 9a9137fa2b035d34e881701d2c178192,
@@ -299,9 +323,27 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 5155717756324838080}
   m_SourcePrefab: {fileID: 100100000, guid: 9a9137fa2b035d34e881701d2c178192, type: 3}
+--- !u!1 &3010885141357826921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8143070647044102886, guid: 9a9137fa2b035d34e881701d2c178192,
+    type: 3}
+  m_PrefabInstance: {fileID: 6397697013258635663}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &3797120976490052832 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7816906318471787887, guid: 9a9137fa2b035d34e881701d2c178192,
+    type: 3}
+  m_PrefabInstance: {fileID: 6397697013258635663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6459704354240925026 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 102550813385737453, guid: 9a9137fa2b035d34e881701d2c178192,
+    type: 3}
+  m_PrefabInstance: {fileID: 6397697013258635663}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6642770138055329412 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 353237590725857035, guid: 9a9137fa2b035d34e881701d2c178192,
     type: 3}
   m_PrefabInstance: {fileID: 6397697013258635663}
   m_PrefabAsset: {fileID: 0}
@@ -329,5 +371,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d474cfc01f29db54fa9c22583c00ff71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clearCounter: {fileID: 0}
-  visualGameObject: {fileID: 3797120976490052832}
+  baseCounter: {fileID: 4241571844333904543}
+  visualGameObjectArray:
+  - {fileID: 3797120976490052832}
+  - {fileID: 3010885141357826921}
+  - {fileID: 6642770138055329412}
+  - {fileID: 6459704354240925026}

@@ -1747,6 +1747,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7645038247027964318, guid: b8a67e44024fed94faf17dd6dd5e3420,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7645038247027964318, guid: b8a67e44024fed94faf17dd6dd5e3420,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 81ec189dfe020bd45a2d5d2cf1b0c5ed,
+        type: 2}
+    - target: {fileID: 7645038247027964318, guid: b8a67e44024fed94faf17dd6dd5e3420,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: 72f88b34ce0e2a948ac0310ee116bcd8,
+        type: 2}
+    - target: {fileID: 7645038247027964318, guid: b8a67e44024fed94faf17dd6dd5e3420,
+        type: 3}
+      propertyPath: cuttingRecipeSOArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: fcd019d06bb45fd46ae9598141b799ac,
+        type: 2}
     - target: {fileID: 8218887274559522286, guid: b8a67e44024fed94faf17dd6dd5e3420,
         type: 3}
       propertyPath: m_Name

@@ -62,13 +62,17 @@ public class SoundManager : MonoBehaviour {
         PlaySound(audioClipArray[Random.Range(0, audioClipArray.Length)], position, volume);
     }
 
-    private void PlaySound(AudioClip audioClip, Vector3 position, float volumeMultiplier = 1f){
+    private void PlaySound (AudioClip audioClip, Vector3 position, float volumeMultiplier = 1f){
         AudioSource.PlayClipAtPoint(audioClip, position, volumeMultiplier * volume);
     }
 
 
-    public void PlayFootstepsSound(Vector3 position, float volume){
+    public void PlayFootstepsSound (Vector3 position, float volume){
         PlaySound(audioClipRefsSO.footstep, position, volume);
+    }
+
+    public void PlayCountdownSound (){
+        PlaySound(audioClipRefsSO.warning, Vector3.zero);
     }
 
     public void ChangeVolume(){

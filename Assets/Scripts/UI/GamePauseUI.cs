@@ -13,7 +13,7 @@ public class GamePauseUI : MonoBehaviour {
     
 
 
-    void Awake(){
+    private void Awake(){
         resumeButton.onClick.AddListener(() => {
             GameManager.Instance.TogglePauseGame();
         });

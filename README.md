@@ -10,6 +10,8 @@
 - **Customizable settings** for sound, music, and keybindings.  
 - **Fast-paced challenges** testing multitasking and speed.  
 
+![Main Menu](https://github.com/Aberto7/KitchenChaos/blob/4a975af53ae2eaea8d3b393d4feb344d2f52bdea/ReadME_Images/Screenshots/MainMenu_Screenshot.png)  
+
 ---
 
 ## 🎮 Gameplay  
@@ -51,7 +53,7 @@
 ---
 
 ## 🛠️ Development  
-Built with **Unity** (C#) as a learning project, focusing on:  
+Built with **Unity 2022.3.48f1** (C#), focusing on:  
 - Input system management.  
 - UI/UX design (menus, HUD).  
 - Scene transitions and game states.  
@@ -74,3 +76,10 @@ Built with **Unity** (C#) as a learning project, focusing on:
 --- 
 
 🔥 **Can you handle the chaos?** 🔥  
+
+### 📸 Screenshots  
+![Game Over](https://github.com/Aberto7/KitchenChaos/blob/4a975af53ae2eaea8d3b393d4feb344d2f52bdea/ReadME_Images/Screenshots/GameOver_Screenshot.png)  
+![Gameplay](https://github.com/Aberto7/KitchenChaos/blob/4a975af53ae2eaea8d3b393d4feb344d2f52bdea/ReadME_Images/Screenshots/GamePlay_Screenshot.png)  
+![Options](https://github.com/Aberto7/KitchenChaos/blob/4a975af53ae2eaea8d3b393d4feb344d2f52bdea/ReadME_Images/Screenshots/OptionMenu_Screenshot.png)  
+![Pause Menu](https://github.com/Aberto7/KitchenChaos/blob/4a975af53ae2eaea8d3b393d4feb344d2f52bdea/ReadME_Images/Screenshots/PauseMenu_Screenshot.png)  
+![Tutorial](https://github.com/Aberto7/KitchenChaos/blob/4a975af53ae2eaea8d3b393d4feb344d2f52bdea/ReadME_Images/Screenshots/Tutorial_Screenshot.png)  
